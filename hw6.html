@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            const operation = prompt("Please, choose operation you would like to perform by typing +, -, * or /");
+            const num1 = +prompt("Please, enter the first number");
+            const num2 = +prompt("Please, enter the second number");
+            function calc() {
+                switch (operation) {
+                    case "+":
+                        return message = (num1 + " + " + num2 + " = " + (num1 + num2));
+                    case "-":
+                        return message = (num1 + " - " + num2 + " = " + (num1 - num2));  
+                    case "*":
+                        return message = (num1 + " * " + num2 + " = " + (num1 * num2));
+                    case "/":
+                        return message = (num1 + " / " + num2 + " = " + (num1 / num2));
+                }
+            }
+            alert(calc());
+        </script>
+    </body>
+</html>
