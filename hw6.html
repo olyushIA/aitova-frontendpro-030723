@@ -4,20 +4,18 @@
     <body>
         <script>
             const operation = prompt("Please, choose operation you would like to perform by typing +, -, * or /");
-            const firstPrompt = prompt("Please, enter the first number");
-            const secondPrompt = prompt("Please, enter the second number");
-            const num1 = +firstPrompt;
-            const num2 = +secondPrompt;
+            const num1 = +prompt("Please, enter the first number");
+            const num2 = +prompt("Please, enter the second number");
             function calc() {
                 switch (operation) {
                     case "+":
-                        return message = (firstPrompt + " + " + secondPrompt + " = " + (num1 + num2));
+                        return message = (num1 + " + " + num2 + " = " + (num1 + num2));
                     case "-":
-                        return message = (firstPrompt + " - " + secondPrompt + " = " + (num1 - num2));  
+                        return message = (num1 + " - " + num2 + " = " + (num1 - num2));  
                     case "*":
-                        return message = (firstPrompt + " * " + secondPrompt + " = " + (num1 * num2));
+                        return message = (num1 + " * " + num2 + " = " + (num1 * num2));
                     case "/":
-                        return message = (firstPrompt + " / " + secondPrompt + " = " + (num1 / num2));
+                        return message = (num1 + " / " + num2 + " = " + (num1 / num2));
                 }
             }
             alert(calc());
